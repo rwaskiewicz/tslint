@@ -408,7 +408,7 @@ task("lib", libraryTargets);
 var processDiagnosticMessagesJs = path.join(scriptsDirectory, "processDiagnosticMessages.js");
 var diagnosticMessagesJson = path.join(parserDirectory, "diagnosticMessages.json");
 var diagnosticInfoMapTs = path.join(parserDirectory, "diagnosticInformationMap.generated.ts");
-compileConfigFile(processDiagnosticMessagesJs, [], "./scripts/processDiagnosticMessages.tsconfig.json")
+compileConfigFile(processDiagnosticMessagesJs, [], "./scripts/processDiagnosticMessages.tsconfig.json");
 
 var generatedDiagnosticMessagesJSON = path.join(parserDirectory, "diagnosticMessages.generated.json");
 var builtGeneratedDiagnosticMessagesJSON = path.join(builtLocalDirectory, "diagnosticMessages.generated.json");
